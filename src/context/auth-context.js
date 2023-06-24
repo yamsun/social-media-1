@@ -10,6 +10,8 @@ const AuthProvider = ({ children }) => {
   const [token, setToken] = useState(localAuthToken);
   const [currentUser, setCurrentUser] = useState(localUserDetail);
 
+  console.log('token', !!token);
+
   const loginHandler = async (email, password) => {
     try {
       const res = await axios.post(`/api/auth/login`, {

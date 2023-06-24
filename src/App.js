@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import axios from "axios";
 import { Route, Routes } from "react-router-dom";
 import { Login } from "./pages/auth/login";
+import Home from "./pages/auth/login/Home";
 
 const getUsers = () => {
   axios
@@ -22,6 +23,8 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="login" element={<Login />} />
+        <Route path="home" element={<Home />} />
+
       </Routes>
     </div>
   );

@@ -38,7 +38,7 @@ export const Login = () => {
         <h3 className={styles.heading}>Sign In</h3>
         <div className={styles.form}>
           <label>
-            <div>Email address</div>
+            <div>Username</div>
             <input value={email} onChange={(e) => setEmail(e.target.value)} />
           </label>
           <label>
@@ -64,7 +64,7 @@ export const Login = () => {
           >
             Login as test user
           </button>
-          <div>Create New Account ></div>
+          <div>Create New Account {" > "}</div>
         </div>
       </div>
     </div>
